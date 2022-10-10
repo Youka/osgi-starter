@@ -1,0 +1,7 @@
+# Change disk layout to fit maven
+-outputmask = ${@bsn}-${version;===S;${@version}}.jar
+src = src/main/java,src/main/resources
+testsrc = src/test/java,src/test/resources
+target-dir = build
+bin = ${target-dir}/classes
+testbin = ${target-dir}/test-classes

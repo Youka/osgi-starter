@@ -1,6 +1,11 @@
 # Gradle
-.gradle
+.gradle/
 build/
+
+# OSGi
+bin/
+bin_test/
+generated/
 
 # IntelliJ
 .idea/
