@@ -6,6 +6,7 @@ build/
 bin/
 bin_test/
 generated/
+cnf/cache/
 
 # IntelliJ
 .idea/

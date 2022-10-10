@@ -1,0 +1,4 @@
+-buildpath:  \
+	osgi.annotation,\
+	org.osgi.service.component.annotations,\
+	org.apache.felix:org.apache.felix.gogo.runtime
