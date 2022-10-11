@@ -1,3 +1,2 @@
 -dependson: *
--export \
-    application.bndrun
+-export application.bndrun
