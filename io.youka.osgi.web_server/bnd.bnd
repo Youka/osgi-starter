@@ -1,4 +1,5 @@
--buildpath:  \
-	osgi.annotation,\
-	org.osgi.service.component.annotations,\
-	org.apache.felix:org.apache.felix.gogo.runtime
+-buildpath: \
+	osgi.annotation, \
+	org.osgi.service.component.annotations, \
+	org.apache.felix:org.apache.felix.gogo.runtime, \
+	commons-io:commons-io
