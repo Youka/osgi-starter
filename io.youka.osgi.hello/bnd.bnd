@@ -1,3 +1,5 @@
+Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+
 -buildpath: \
 	osgi.annotation, \
 	org.osgi.service.component.annotations, \

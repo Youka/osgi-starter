@@ -1,4 +1,4 @@
-package io.youka.osgi.web_server;
+package io.youka.osgi.hello;
 
 import lombok.Data;
 import lombok.Value;

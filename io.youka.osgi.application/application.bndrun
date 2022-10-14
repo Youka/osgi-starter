@@ -1,5 +1,7 @@
+Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+
 -runbundles: \
-	io.youka.osgi.web_server, \
+	io.youka.osgi.hello, \
 	org.apache.felix.gogo.command, \
 	org.apache.felix.gogo.runtime, \
 	org.apache.felix.gogo.shell, \

@@ -1,4 +1,2 @@
 -runfw: org.apache.felix.framework
 -runee: JavaSE-17
-
-Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
