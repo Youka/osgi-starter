@@ -1,0 +1,11 @@
+Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+
+-runbundles: \
+	org.apache.felix.http.jetty, \
+	org.apache.felix.http.servlet-api, \
+	io.youka.osgi.hello, \
+	${base-deps}
+
+-runproperties: \
+    org.apache.felix.http.debug=true, \
+    org.osgi.service.http.port=8181

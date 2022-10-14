@@ -7,6 +7,7 @@ Starter files for osgi based projects.
 
 ## References
 * OSGi framework: [Apache Felix](https://felix.apache.org/documentation/downloads.html)
+  * Subprojects: [felix-dev](https://github.com/apache/felix-dev)
 * Management CLI: [bndtools](https://bnd.bndtools.org/chapters/120-install.html)
 * IDE plugins:
   * [IntelliJ](https://plugins.jetbrains.com/plugin/1816-osgi)

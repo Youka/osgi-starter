@@ -1,2 +1,10 @@
 -runfw: org.apache.felix.framework
 -runee: JavaSE-17
+
+base-deps: \
+	org.apache.felix.scr, \
+	org.osgi.service.component, \
+	org.osgi.util.function, \
+	org.osgi.util.promise, \
+	commons-io:commons-io, \
+	org.mapstruct:mapstruct
