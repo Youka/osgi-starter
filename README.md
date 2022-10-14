@@ -3,7 +3,6 @@ Starter files for osgi based projects.
 
 ## Usage
 * Build bundles + application jar: `./gradlew build`
-* Resolve runtime dependencies: `./gradlew resolve.application`
 * Run application: `java -jar io.youka.osgi.application/build/application.bndrun-1.0.0-SNAPSHOT.jar`
 
 ## References

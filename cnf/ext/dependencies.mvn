@@ -12,3 +12,4 @@ org.apache.felix:org.apache.felix.scr:2.2.2
 
 # Commons
 commons-io:commons-io:2.11.0
+org.mapstruct:mapstruct:1.5.3.Final

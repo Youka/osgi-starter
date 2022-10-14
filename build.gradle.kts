@@ -21,5 +21,6 @@ subprojects {
     // Extend java compilation by annotation processors
     dependencies {
         compileOnly("org.projectlombok:lombok:1.18.24")?.apply { annotationProcessor(this) }
+        compileOnly("org.mapstruct:mapstruct:1.5.3.Final")?.apply { annotationProcessor("$group:mapstruct-processor:$version") }
     }
 }
