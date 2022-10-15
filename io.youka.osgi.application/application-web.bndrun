@@ -3,8 +3,8 @@ Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 -runbundles: \
 	org.apache.felix.http.jetty, \
 	org.apache.felix.http.servlet-api, \
-	io.youka.osgi.hello, \
-	${base-deps}
+	io.youka.osgi.servlet.hello, \
+	${base-bundles}
 
 -runproperties: \
     org.apache.felix.http.debug=true, \

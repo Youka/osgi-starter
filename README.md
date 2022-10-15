@@ -2,8 +2,10 @@
 Starter files for osgi based projects.
 
 ## Usage
-* Build bundles + application jar: `./gradlew build`
-* Run application: `java -jar io.youka.osgi.application/build/application.bndrun-1.0.0-SNAPSHOT.jar`
+* Build bundles + application jars: `./gradlew build`
+* Run application:
+  * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`
+  * With web server: `java -jar io.youka.osgi.application/build/application-web.bndrun-1.0.0-SNAPSHOT.jar`
 
 ## References
 * OSGi framework: [Apache Felix](https://felix.apache.org/documentation/downloads.html)

@@ -1,7 +1,7 @@
 -runfw: org.apache.felix.framework
 -runee: JavaSE-17
 
-base-deps: \
+base-bundles: \
 	org.apache.felix.scr, \
 	org.osgi.service.component, \
 	org.osgi.util.function, \

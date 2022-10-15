@@ -1,4 +1,4 @@
-package io.youka.osgi.hello;
+package io.youka.osgi.servlet.hello;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;

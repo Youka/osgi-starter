@@ -1,4 +1,4 @@
-package io.youka.osgi.hello;
+package io.youka.osgi.servlet.hello;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
@@ -11,12 +11,15 @@ import java.util.Hashtable;
 public class Activator implements BundleActivator {
     private ServiceRegistration<Servlet> registration;
 
+    @Override
     public void start(BundleContext context) {
+        System.out.println("Activator start!");
         var props = new Hashtable<String, String>();
         props.put(HttpWhiteboardConstants.HTTP_WHITEBOARD_SERVLET_PATTERN, "/hello");
         this.registration = context.registerService(Servlet.class, new HelloServlet(), props);
     }
 
+    @Override
     public void stop(BundleContext context) {
         this.registration.unregister();
     }
