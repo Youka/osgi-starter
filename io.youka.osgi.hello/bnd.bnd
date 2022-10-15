@@ -2,6 +2,11 @@ Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -buildpath: \
 	osgi.annotation, \
+	org.osgi.framework, \
+	org.apache.felix.http.servlet-api, \
+	org.apache.felix.http.api, \
 	org.osgi.service.component.annotations, \
 	org.apache.felix:org.apache.felix.gogo.runtime, \
 	commons-io:commons-io
+
+-contract: !JavaServlet,*

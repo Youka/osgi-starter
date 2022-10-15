@@ -14,7 +14,7 @@ import java.nio.charset.StandardCharsets;
 
 @GogoCommand(scope="hello", function={"world", "car"})
 @Component(service=Object.class)
-public class Hello {
+public class HelloCommand {
     public String world() throws IOException {
         return IOUtils.resourceToString("/hello_world.txt", StandardCharsets.UTF_8, this.getClass().getClassLoader());
     }
