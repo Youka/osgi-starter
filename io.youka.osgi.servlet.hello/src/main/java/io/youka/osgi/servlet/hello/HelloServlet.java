@@ -8,8 +8,6 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        try (final var writer = resp.getWriter()) {
-            writer.print("Hello world!");
-        }
+        resp.getWriter().print("Hello world!");
     }
 }

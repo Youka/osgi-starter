@@ -6,4 +6,7 @@ Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 	org.apache.felix.http.servlet-api, \
 	org.apache.felix.http.api
 
--contract: !JavaServlet,*
+# Ignore conflict of same servlet classes in javax & jakarta packages
+-contract: \
+    !JavaServlet, \
+    *

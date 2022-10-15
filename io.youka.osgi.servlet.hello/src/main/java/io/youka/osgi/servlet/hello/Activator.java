@@ -18,7 +18,9 @@ public class Activator implements BundleActivator {
         context.registerService(
             Servlet.class,
             new HelloServlet(),
-            asDictionary(Map.of(HttpWhiteboardConstants.HTTP_WHITEBOARD_SERVLET_PATTERN, "/hello"))
+            asDictionary(Map.of(
+                HttpWhiteboardConstants.HTTP_WHITEBOARD_SERVLET_PATTERN, "/hello"
+            ))
         );
     }
 
