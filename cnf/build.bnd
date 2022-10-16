@@ -8,3 +8,7 @@ base-bundles: \
 	org.osgi.util.promise, \
 	commons-io:commons-io, \
 	org.mapstruct:mapstruct
+
+base-build: \
+	osgi.annotation, \
+	org.osgi.service.component.annotations
