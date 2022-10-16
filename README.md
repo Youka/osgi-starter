@@ -15,11 +15,23 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 ## Usage
 * Build bundles + application jars: `./gradlew build`
 * Run application:
-  * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`
-  * With web server: `java -jar io.youka.osgi.application/build/application-web.bndrun-1.0.0-SNAPSHOT.jar`
+  * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`  
+    _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
+  * With web server: `./gradlew run.application-web`
 * User interaction:
   * Shell: the shell launches in console and shows options on input `help`.
   * Web: the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations.
+
+## Next steps
+* Add unit tests
+* Add logging (+ backend configuration)
+* Add webconsole (+ plugins)
+* Provide service configurations
+* Migrate servlet -> jax-rs (+ json serialization)
+* Enable security (framework, interfaces)
+* Automate releases (artifact upload, dockerfile, ci pipeline)
+* Improve quality assurance (linter, code coverage, monitoring)
+* ...
 
 ## References
 * OSGi framework: [Apache Felix](https://felix.apache.org/documentation/downloads.html)
@@ -29,6 +41,8 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * [IntelliJ](https://plugins.jetbrains.com/plugin/1816-osgi)
   * [Eclipse](https://marketplace.eclipse.org/content/bndtools-osgi-development-tool)
 * Guides:
-  * [Guided tour](https://bnd.bndtools.org/chapters/123-tour-workspace.html)
-  * [Video tour](https://bndtools.org/workspace.html)
-  * [Example repository](https://github.com/aQute-os/com.example)
+  * [bndtools - Guided tour](https://bnd.bndtools.org/chapters/123-tour-workspace.html)
+  * [bndtools - Video tour](https://bndtools.org/workspace.html)
+  * [aQute - Example repository](https://github.com/aQute-os/com.example)
+  * [OSGi - Compendium (v8)](https://docs.osgi.org/specification/osgi.cmpn/8.0.0/)
+  * [Apache Felix - Tutorials](https://felix.apache.org/documentation/tutorials-examples-and-presentations.html)
