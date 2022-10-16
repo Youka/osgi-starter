@@ -1,4 +1,4 @@
-package io.youka.osgi.command.hello.car;
+package io.youka.osgi.hello_command.provider.car;
 
 import lombok.Value;
 

@@ -1,4 +1,4 @@
-package io.youka.osgi.servlet.hello;
+package io.youka.osgi.hello_servlet.provider;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.http.whiteboard.propertytypes.HttpWhiteboardServletPattern;

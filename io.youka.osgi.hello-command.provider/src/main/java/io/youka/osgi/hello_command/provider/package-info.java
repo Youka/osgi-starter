@@ -1,3 +1,3 @@
 @org.osgi.annotation.bundle.Export
 @org.osgi.annotation.versioning.Version("1.0.0")
-package io.youka.osgi.servlet.hello;
+package io.youka.osgi.hello_command.provider;

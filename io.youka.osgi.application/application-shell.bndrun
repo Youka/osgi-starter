@@ -4,5 +4,5 @@ Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
     org.apache.felix.gogo.runtime, \
 	org.apache.felix.gogo.command, \
 	org.apache.felix.gogo.shell, \
-	io.youka.osgi.command.hello, \
+	io.youka.osgi.hello-command.provider, \
 	${base-bundles}

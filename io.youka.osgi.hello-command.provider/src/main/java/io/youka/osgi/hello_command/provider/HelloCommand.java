@@ -1,7 +1,7 @@
-package io.youka.osgi.command.hello;
+package io.youka.osgi.hello_command.provider;
 
-import io.youka.osgi.command.hello.car.Car;
-import io.youka.osgi.command.hello.car.CarMapper;
+import io.youka.osgi.hello_command.provider.car.Car;
+import io.youka.osgi.hello_command.provider.car.CarMapper;
 import org.apache.commons.io.IOUtils;
 import org.apache.felix.service.command.annotations.GogoCommand;
 import org.osgi.service.component.annotations.Component;
