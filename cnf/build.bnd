@@ -11,4 +11,5 @@ base-bundles: \
 
 base-build: \
 	osgi.annotation, \
-	org.osgi.service.component.annotations
+	org.osgi.service.component.annotations, \
+	org.osgi.service.component

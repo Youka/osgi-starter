@@ -1,6 +1,7 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -buildpath: \
+    org.osgi.framework, \
 	org.apache.felix:org.apache.felix.gogo.runtime, \
 	commons-io:commons-io, \
 	${base-build}
