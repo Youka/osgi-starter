@@ -18,5 +18,5 @@ org.apache.felix:org.apache.felix.http.jetty:4.2.2
 org.apache.felix:org.apache.felix.http.servlet-api:2.0.0
 
 # Commons
-commons-io:commons-io:2.11.0
 org.mapstruct:mapstruct:1.5.3.Final
+commons-io:commons-io:2.11.0

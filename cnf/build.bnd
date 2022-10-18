@@ -6,8 +6,8 @@ base-bundles: \
 	org.osgi.service.component, \
 	org.osgi.util.function, \
 	org.osgi.util.promise, \
-	commons-io:commons-io, \
-	org.mapstruct:mapstruct
+	org.mapstruct:mapstruct, \
+	commons-io:commons-io
 
 base-build: \
 	osgi.annotation, \

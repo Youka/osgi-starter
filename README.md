@@ -4,7 +4,7 @@ Starter files for osgi based projects.
 ## Features
 * Multiple simple bundles
 * Lightweight workspace setup
-* Examples for shell commands and web endpoints
+* Examples for shell commands, web endpoints and custom services
 * Supports popular annotation processors
 * Build standalone applications
 
@@ -18,9 +18,11 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`  
     _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
   * With web server: `./gradlew run.application-web`
+  * With services only: `./gradlew run.application-service`
 * User interaction:
   * Shell: the shell launches in console and shows options on input `help`.
   * Web: the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations.
+  * Service: see console output (nothing more happens).
 
 ## Next steps
 * Add unit tests

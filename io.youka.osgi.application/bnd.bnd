@@ -3,4 +3,5 @@ Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 -dependson: *
 -export \
     application-shell.bndrun, \
-    application-web.bndrun
+    application-web.bndrun, \
+    application-service.bndrun
