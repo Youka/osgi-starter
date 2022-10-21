@@ -12,15 +12,12 @@ import java.util.List;
 
 @Component(immediate = true)
 public class MyDummyServiceConsumer {
-    @Reference
-    private List<DummyService> dummyServices;
-
     @Activate
-    private void activate(ComponentContext context) {
+    public MyDummyServiceConsumer(ComponentContext context, @Reference List<DummyService> dummyServices) {
         System.out.println("Activated component " + this.getClass().getName());
         System.out.println(
             "Found dummy service messages: " +
-                this.dummyServices.stream()
+                dummyServices.stream()
                     .map(DummyService::getMessage)
                     .toList()
         );
