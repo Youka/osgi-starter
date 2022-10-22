@@ -1,7 +1,7 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -runbundles: \
+    ${base-bundles}, \
 	io.youka.osgi.dummy-service.api, \
 	io.youka.osgi.my-dummy-service.provider, \
-	io.youka.osgi.my-dummy-service.consumer, \
-	${base-bundles}
+	io.youka.osgi.my-dummy-service.consumer

@@ -1,8 +1,8 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -runbundles: \
+    ${base-bundles}, \
     org.apache.felix.gogo.runtime, \
 	org.apache.felix.gogo.command, \
 	org.apache.felix.gogo.shell, \
-	io.youka.osgi.hello-command.provider, \
-	${base-bundles}
+	io.youka.osgi.hello-command.provider

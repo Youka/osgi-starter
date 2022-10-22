@@ -1,10 +1,10 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -runbundles: \
+    ${base-bundles}, \
 	org.apache.felix.http.jetty, \
 	org.apache.felix.http.servlet-api, \
-	io.youka.osgi.hello-servlet.provider, \
-	${base-bundles}
+	io.youka.osgi.hello-servlet.provider
 
 -runproperties: \
     org.apache.felix.http.debug=true, \

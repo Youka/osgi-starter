@@ -1,5 +1,5 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
 
 -buildpath: \
-    io.youka.osgi.dummy-service.api, \
-	${base-build}
+    ${base-build}, \
+    io.youka.osgi.dummy-service.api
