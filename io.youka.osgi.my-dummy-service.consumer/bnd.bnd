@@ -1,4 +1,5 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+Bundle-Description: Consumer of dummy services with console output.
 
 -buildpath: \
     ${base-build}, \

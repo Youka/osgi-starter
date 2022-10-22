@@ -1,4 +1,5 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+Bundle-Description: Hello servlets for http whiteboard.
 
 -buildpath: \
     ${base-build}, \

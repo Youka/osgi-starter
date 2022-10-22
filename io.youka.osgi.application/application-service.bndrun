@@ -1,4 +1,5 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+Bundle-Description: Run bundles to present all parts of a dummy service.
 
 -runbundles: \
     ${base-bundles}, \
