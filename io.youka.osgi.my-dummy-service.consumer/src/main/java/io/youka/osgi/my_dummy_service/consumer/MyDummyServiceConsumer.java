@@ -13,14 +13,12 @@ import java.util.List;
 @Component(immediate = true)
 public class MyDummyServiceConsumer {
     @Activate
-    public MyDummyServiceConsumer(ComponentContext context, @Reference List<DummyService> dummyServices) {
+    public MyDummyServiceConsumer(
+        ComponentContext context,
+        @Reference(target = "(!(service.dummy.active=false))") List<DummyService> dummyServices
+    ) {
         System.out.println("Activated component " + this.getClass().getName());
-        System.out.println(
-            "Found dummy service messages: " +
-                dummyServices.stream()
-                    .map(DummyService::getMessage)
-                    .toList()
-        );
+        System.out.println("Found dummy service messages: " + dummyServices.stream().map(DummyService::getMessage).toList());
     }
 
     @Deactivate

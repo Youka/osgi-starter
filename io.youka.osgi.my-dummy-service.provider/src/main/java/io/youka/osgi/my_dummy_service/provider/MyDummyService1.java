@@ -4,9 +4,9 @@ import io.youka.osgi.dummy_service.api.DummyService;
 import org.osgi.service.component.annotations.Component;
 
 @Component
-public class MyDummyService implements DummyService {
+public class MyDummyService1 implements DummyService {
     @Override
     public String getMessage() {
-        return "My dummy service";
+        return "My dummy service 1";
     }
 }
