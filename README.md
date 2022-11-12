@@ -4,7 +4,7 @@ Starter files for osgi based projects.
 ## Features
 * Multiple simple bundles
 * Lightweight workspace setup
-* Examples for shell commands, web endpoints and custom services
+* Examples for shell commands, web endpoints, custom services and unit tests
 * Supports popular annotation processors
 * Build standalone applications
 
@@ -13,7 +13,7 @@ Only [JDK 17+](https://adoptium.net/temurin/releases/) is required.
 For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or [eclipse](https://www.eclipse.org/downloads/packages/)) + osgi plugin should get installed.
 
 ## Usage
-* Build bundles + application jars: `./gradlew build`
+* Build bundles + application jars (includes testing): `./gradlew build`
 * Run application:
   * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`  
     _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
@@ -25,10 +25,9 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * Service: see console output (nothing more happens).
 
 ## Next steps
-* Add unit tests
 * Add logging (+ backend configuration)
 * Add webconsole (+ plugins)
-* Provide service configurations
+* Provide service configurations (+ configadmin)
 * Migrate servlet -> jax-rs (+ json serialization)
 * Enable security (framework, interfaces)
 * Automate releases (artifact upload, dockerfile, ci pipeline)
@@ -48,3 +47,4 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * [aQute - Example repository](https://github.com/aQute-os/com.example)
   * [OSGi - Compendium (v8)](https://docs.osgi.org/specification/osgi.cmpn/8.0.0/)
   * [Apache Felix - Tutorials](https://felix.apache.org/documentation/tutorials-examples-and-presentations.html)
+  * [OSGi - Test examples](https://github.com/osgi/osgi-test/tree/main/examples)
