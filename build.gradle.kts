@@ -21,9 +21,9 @@ subprojects {
     // Extend java compilation by annotation processors
     dependencies {
         // Correct flaws of java programming language
-        compileOnly("org.projectlombok:lombok:1.18.24")?.apply { annotationProcessor(this) }
+        compileOnly("org.projectlombok:lombok:${properties["lombokVersion"]}")?.apply { annotationProcessor(this) }
         // Simplify bean-to-bean mapping
-        compileOnly("org.mapstruct:mapstruct:1.5.3.Final")?.apply { annotationProcessor("$group:mapstruct-processor:$version") }
+        compileOnly("org.mapstruct:mapstruct:${properties["mapstructVersion"]}")?.apply { annotationProcessor("$group:mapstruct-processor:$version") }
     }
 
     // Enable JUnit5 testing

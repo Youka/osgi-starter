@@ -28,5 +28,4 @@ base-test: \
     org.junit.platform:junit-platform-engine, \
     org.mockito:mockito-core, \
     net.bytebuddy:byte-buddy, \
-    net.bytebuddy:byte-buddy-agent, \
     org.objenesis:objenesis

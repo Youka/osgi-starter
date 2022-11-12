@@ -1,5 +1,5 @@
 # This file contains full-length qualifiers for dependencies.
-# For -buildpath or -runbundles the version can be skipped.
+# For -buildpath, -testpath or -runbundles the version can be skipped.
 
 # OSGi
 org.osgi:osgi.annotation:8.1.0
@@ -18,7 +18,7 @@ org.apache.felix:org.apache.felix.http.jetty:4.2.2
 org.apache.felix:org.apache.felix.http.servlet-api:2.0.0
 
 # Commons
-org.mapstruct:mapstruct:1.5.3.Final
+org.mapstruct:mapstruct:${mapstructVersion}
 commons-io:commons-io:2.11.0
 
 # Test
@@ -31,5 +31,4 @@ org.junit.platform:junit-platform-commons:1.9.1
 org.junit.platform:junit-platform-engine:1.9.1
 org.mockito:mockito-core:4.8.1
 net.bytebuddy:byte-buddy:1.12.18
-net.bytebuddy:byte-buddy-agent:1.12.18
 org.objenesis:objenesis:3.2
