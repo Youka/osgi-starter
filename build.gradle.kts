@@ -25,4 +25,11 @@ subprojects {
         // Simplify bean-to-bean mapping
         compileOnly("org.mapstruct:mapstruct:1.5.3.Final")?.apply { annotationProcessor("$group:mapstruct-processor:$version") }
     }
+
+    // Enable JUnit5 testing
+    tasks {
+        withType(Test::class.java) {
+            useJUnitPlatform()
+        }
+    }
 }

@@ -20,3 +20,16 @@ org.apache.felix:org.apache.felix.http.servlet-api:2.0.0
 # Commons
 org.mapstruct:mapstruct:1.5.3.Final
 commons-io:commons-io:2.11.0
+
+# Test
+org.junit.jupiter:junit-jupiter-api:5.9.1
+org.junit.jupiter:junit-jupiter-engine:5.9.1
+org.junit.jupiter:junit-jupiter-params:5.9.1
+org.apiguardian:apiguardian-api:1.1.2
+org.opentest4j:opentest4j:1.2.0
+org.junit.platform:junit-platform-commons:1.9.1
+org.junit.platform:junit-platform-engine:1.9.1
+org.mockito:mockito-core:4.8.1
+net.bytebuddy:byte-buddy:1.12.18
+net.bytebuddy:byte-buddy-agent:1.12.18
+org.objenesis:objenesis:3.2

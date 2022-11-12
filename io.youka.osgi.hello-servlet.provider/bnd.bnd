@@ -10,3 +10,6 @@ Bundle-Description: Hello servlets for http whiteboard.
 -contract: \
     !JavaServlet, \
     *
+
+-testpath: \
+    ${base-test}
