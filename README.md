@@ -13,16 +13,25 @@ Only [JDK 17+](https://adoptium.net/temurin/releases/) is required.
 For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or [eclipse](https://www.eclipse.org/downloads/packages/)) + osgi plugin should get installed.
 
 ## Usage
-* Build bundles + application jars (includes testing): `./gradlew build`
-* Run application:
-  * With gogo shell: `java -jar io.youka.osgi.application/build/application-shell.bndrun-1.0.0-SNAPSHOT.jar`  
-    _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
-  * With web server: `./gradlew run.application-web`
-  * With services only: `./gradlew run.application-service`
-* User interaction:
-  * Shell: the shell launches in console and shows options on input `help`.
-  * Web: the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations.
-  * Service: see console output (nothing more happens).
+* Defined application bundles (see `io.youka.osgi.application` bundle):
+  * **application-service**:
+    * Export: `./gradlew export.application-service`
+    * Run: `./gradlew run.application-service`
+    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations_
+  * **application-shell**:
+    * Export: `./gradlew export.application-shell`
+    * Run: `java -jar io.youka.osgi.application/build/distributions/executable/application-service.jar`  
+      _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
+    * Interaction: _the shell launches in console and shows options on input `help`_
+  * **application-web**:
+    * Export: `./gradlew export.application-web`
+    * Run: `./gradlew run.application-web`
+    * Interaction: _see console output (nothing more happens)_
+* Run unit tests: `./gradlew test`
+* Advanced bundle resolution:
+  * Add [-runrequires](https://bnd.bndtools.org/instructions/runrequires.html) to _*.bndrun_ files
+  * Call `./gradlew resolve`
+  * `-runbundles` gets updated by deep search of requirements
 
 ## Next steps
 * Add logging (+ backend configuration)
@@ -30,6 +39,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 * Provide service configurations (+ configadmin)
 * Migrate servlet -> jax-rs (+ json serialization)
 * Enable security (framework, interfaces)
+* Add integration tests (OSGi tests which run bundles)
 * Automate releases (artifact upload, dockerfile, ci pipeline)
 * Improve quality assurance (linter, code coverage, monitoring)
 * ...
