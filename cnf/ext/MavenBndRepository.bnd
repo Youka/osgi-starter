@@ -1,9 +1,0 @@
-# Load shared properties from gradle
--include: ${.}/../../gradle.properties
-
-# Set dependencies repository (maven-central with management index)
--plugin.MavenBndRepository = aQute.bnd.repository.maven.provider.MavenBndRepository; \
-								name="Maven Central"; \
-								releaseUrl="https://repo1.maven.org/maven2"; \
-								readOnly=true; \
-								index=${.}/index.mvn

@@ -17,7 +17,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * **application-service**:
     * Export: `./gradlew export.application-service`
     * Run: `./gradlew run.application-service`
-    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations_
+    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations (see `io.youka.osgi.hello-servlet.provider`)_
   * **application-shell**:
     * Export: `./gradlew export.application-shell`
     * Run: `java -jar io.youka.osgi.application/build/distributions/executable/application-service.jar`  

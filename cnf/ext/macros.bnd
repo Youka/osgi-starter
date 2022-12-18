@@ -1,0 +1,27 @@
+# Base of bundles to start applications
+base-bundles: \
+	org.apache.felix.scr, \
+	org.osgi.service.component, \
+	org.osgi.util.function, \
+	org.osgi.util.promise, \
+	org.mapstruct:mapstruct, \
+	commons-io:commons-io
+
+# Base of bundles to build own bundles
+base-build: \
+	osgi.annotation, \
+	org.osgi.service.component.annotations, \
+	org.osgi.service.component
+
+# Base of bundles to run unit tests
+base-test: \
+    org.junit.jupiter:junit-jupiter-api, \
+    org.junit.jupiter:junit-jupiter-engine, \
+    org.junit.jupiter:junit-jupiter-params, \
+    org.apiguardian:apiguardian-api, \
+    org.opentest4j:opentest4j, \
+    org.junit.platform:junit-platform-commons, \
+    org.junit.platform:junit-platform-engine, \
+    org.mockito:mockito-core, \
+    net.bytebuddy:byte-buddy, \
+    org.objenesis:objenesis
