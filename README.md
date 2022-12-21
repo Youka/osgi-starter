@@ -10,7 +10,7 @@ Starter files for osgi based projects.
 
 ## Requirements
 Only [JDK 17+](https://adoptium.net/temurin/releases/) is required.  
-For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or [eclipse](https://www.eclipse.org/downloads/packages/)) + osgi plugin should get installed.
+For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or [eclipse](https://www.eclipse.org/downloads/packages/)) should get installed.
 
 ## Usage
 * Defined application bundles (see `io.youka.osgi.application` bundle):
@@ -49,7 +49,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * Subprojects: [felix-dev](https://github.com/apache/felix-dev)
 * Management CLI: [bndtools](https://bnd.bndtools.org/chapters/120-install.html)
 * IDE plugins:
-  * [IntelliJ](https://plugins.jetbrains.com/plugin/1816-osgi)
+  * [IntelliJ](https://plugins.jetbrains.com/plugin/10639-amdatu)
   * [Eclipse](https://marketplace.eclipse.org/content/bndtools-osgi-development-tool)
 * Guides:
   * [bndtools - Guided tour](https://bnd.bndtools.org/chapters/123-tour-workspace.html)
