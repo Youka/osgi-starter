@@ -1,7 +1,0 @@
-Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
-Bundle-Description: Hello commands for gogo shell.
-
--buildpath: \
-    ${base-build}, \
-	org.apache.felix:org.apache.felix.gogo.runtime, \
-	commons-io:commons-io

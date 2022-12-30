@@ -1,6 +1,0 @@
-Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
-Bundle-Description: Provider for dummy services.
-
--buildpath: \
-    ${base-build}, \
-    io.youka.osgi.dummy-service.api

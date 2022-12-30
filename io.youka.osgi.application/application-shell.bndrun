@@ -1,9 +1,0 @@
-Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
-Bundle-Description: Run bundles to start the gogo shell with custom commands.
-
--runbundles: \
-    ${base-bundles}, \
-    org.apache.felix.gogo.runtime, \
-	org.apache.felix.gogo.command, \
-	org.apache.felix.gogo.shell, \
-	io.youka.osgi.hello-command.provider

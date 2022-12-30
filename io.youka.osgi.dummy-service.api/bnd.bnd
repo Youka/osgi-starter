@@ -1,5 +1,0 @@
-Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
-Bundle-Description: API for dummy services.
-
--buildpath: \
-	${base-build}
