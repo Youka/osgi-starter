@@ -16,7 +16,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * **application-web**:
     * Export: `./gradlew export.application-web`
     * Run: `./gradlew run.application-web`
-    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations (see `io.youka.osgi.hello-servlet.provider`)_
+    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by endpoint implementations (see `io.youka.osgi.hello-jaxrs.provider`)_
 * Run unit tests: `./gradlew test`
 * Advanced bundle resolution:
   * Add [-runrequires](https://bnd.bndtools.org/instructions/runrequires.html) to _*.bndrun_ files
@@ -41,6 +41,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * [IntelliJ](https://plugins.jetbrains.com/plugin/10639-amdatu)
   * [Eclipse](https://marketplace.eclipse.org/content/bndtools-osgi-development-tool)
 * OpenAPI generator: [openapi-generator-gradle-plugin](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin)
+* JAX-RS: [aries-jax-rs-whiteboard](https://github.com/apache/aries-jax-rs-whiteboard)
 * Guides:
   * [bndtools - Guided tour](https://bnd.bndtools.org/chapters/123-tour-workspace.html)
   * [bndtools - Video tour](https://bndtools.org/workspace.html)
