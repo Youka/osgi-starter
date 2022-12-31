@@ -16,7 +16,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * **application-web**:
     * Export: `./gradlew export.application-web`
     * Run: `./gradlew run.application-web`
-    * Interaction: _see console output (nothing more happens)_
+    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations (see `io.youka.osgi.hello-servlet.provider`)_
 * Run unit tests: `./gradlew test`
 * Advanced bundle resolution:
   * Add [-runrequires](https://bnd.bndtools.org/instructions/runrequires.html) to _*.bndrun_ files
@@ -30,7 +30,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 * Enable security (framework, interfaces)
 * Add integration tests (OSGi tests which run bundles)
 * Automate releases (artifact upload, dockerfile, ci pipeline)
-* Improve quality assurance (linter, code coverage, monitoring)ce
+* Improve quality assurance (linter, code coverage, monitoring)
 * ...
 
 ## References
@@ -45,5 +45,5 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * [bndtools - Video tour](https://bndtools.org/workspace.html)
   * [aQute - Example repository](https://github.com/aQute-os/com.example)
   * [OSGi - Compendium (v8)](https://docs.osgi.org/specification/osgi.cmpn/8.0.0/)
-  * [Apache Felix - Tutorials](https://felix.apache.org/documentation/tutorials-examples-and-presentations.html)
   * [OSGi - Test examples](https://github.com/osgi/osgi-test/tree/main/examples)
+  * [Apache Felix - Tutorials](https://felix.apache.org/documentation/tutorials-examples-and-presentations.html)
