@@ -40,6 +40,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 * IDE plugins:
   * [IntelliJ](https://plugins.jetbrains.com/plugin/10639-amdatu)
   * [Eclipse](https://marketplace.eclipse.org/content/bndtools-osgi-development-tool)
+* OpenAPI generator: [openapi-generator-gradle-plugin](https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator-gradle-plugin)
 * Guides:
   * [bndtools - Guided tour](https://bnd.bndtools.org/chapters/123-tour-workspace.html)
   * [bndtools - Video tour](https://bndtools.org/workspace.html)
