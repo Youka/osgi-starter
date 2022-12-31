@@ -24,10 +24,9 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
   * `-runbundles` gets updated by deep search of requirements
 
 ## Next steps
-* Migrate servlet -> jax-rs (+ json serialization)
 * Add logging (+ backend configuration)
 * Add webconsole (+ plugins)
-* Provide service configurations (+ configadmin)
+* Provide service configurations
 * Enable security (framework, interfaces)
 * Add integration tests (OSGi tests which run bundles)
 * Automate releases (artifact upload, dockerfile, ci pipeline)

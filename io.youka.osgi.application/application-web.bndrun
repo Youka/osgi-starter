@@ -5,7 +5,7 @@ Bundle-Description: Run bundles to start a webserver with custom endpoints.
     ${base-bundles}, \
 	org.apache.felix.http.jetty, \
 	org.apache.felix.http.servlet-api, \
-	io.youka.osgi.hello-servlet.provider
+	io.youka.osgi.hello-jaxrs.provider
 
 -runproperties: \
     org.apache.felix.http.debug=true, \
