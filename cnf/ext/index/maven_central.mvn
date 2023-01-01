@@ -45,6 +45,13 @@ org.codehaus.woodstox:stax2-api:4.2.1
 org.apache.ws.xmlschema:xmlschema-core:2.2.5
 ch.qos.logback:logback-classic:1.2.3
 ch.qos.logback:logback-core:1.2.3
+org.apache.aries.jax.rs:org.apache.aries.jax.rs.jackson:2.0.1
+com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider:2.12.3
+com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.12.3
+com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.12.3
+com.fasterxml.jackson.core:jackson-databind:2.12.3
+com.fasterxml.jackson.core:jackson-annotations:2.12.3
+com.fasterxml.jackson.core:jackson-core:2.12.3
 
 # Test
 org.junit.jupiter:junit-jupiter-api:5.9.1

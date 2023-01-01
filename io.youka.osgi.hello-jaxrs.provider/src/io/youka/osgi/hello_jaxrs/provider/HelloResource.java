@@ -6,6 +6,9 @@ import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 import javax.annotation.security.PermitAll;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+import java.util.AbstractMap;
 
 @Component(service = HelloResource.class)
 @JaxrsResource
@@ -13,8 +16,9 @@ import javax.ws.rs.Path;
 public class HelloResource {
     @GET
     @Path("/")
+    @Produces(MediaType.APPLICATION_JSON)
     @PermitAll
-    public String hello() {
-        return "Hello world!";
+    public AbstractMap.Entry<String,String> hello() {
+        return new AbstractMap.SimpleImmutableEntry<>("Hello", "world!");
     }
 }
