@@ -27,7 +27,6 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 * Add logging (+ backend configuration)
 * Add webconsole (+ plugins)
 * Provide service configurations
-* Enable security (framework, interfaces)
 * Add integration tests (OSGi tests which run bundles)
 * Automate releases (artifact upload, dockerfile, ci pipeline)
 * Improve quality assurance (linter, code coverage, monitoring)
