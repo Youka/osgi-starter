@@ -1,5 +1,6 @@
 package io.youka.osgi.hello_jaxrs.provider;
 
+import io.youka.osgi.hello_jaxrs.provider.dto.Pair;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsResource;
 
@@ -8,7 +9,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import java.util.AbstractMap;
 
 @Component(service = HelloResource.class)
 @JaxrsResource
@@ -18,7 +18,7 @@ public class HelloResource {
     @Path("/")
     @Produces(MediaType.APPLICATION_JSON)
     @RolesAllowed("USER")
-    public AbstractMap.Entry<String,String> hello() {
-        return new AbstractMap.SimpleImmutableEntry<>("Hello", "world!");
+    public Pair<String,String> hello() {
+        return new Pair<>("Hello", "world!");
     }
 }
