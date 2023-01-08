@@ -1,5 +1,6 @@
 package io.youka.osgi.hello_jaxrs.provider.security;
 
+import com.sun.security.auth.UserPrincipal;
 import lombok.Value;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsExtension;
@@ -33,7 +34,7 @@ public class IdentityFilter implements ContainerRequestFilter {
         }
         @Override
         public Principal getUserPrincipal() {
-            return null;
+            return new UserPrincipal("Dummy");
         }
         @Override
         public boolean isSecure() {
