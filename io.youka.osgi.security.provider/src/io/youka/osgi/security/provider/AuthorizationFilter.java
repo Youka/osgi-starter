@@ -1,4 +1,4 @@
-package io.youka.osgi.hello_jaxrs.provider.security;
+package io.youka.osgi.security.provider;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.jaxrs.whiteboard.propertytypes.JaxrsExtension;

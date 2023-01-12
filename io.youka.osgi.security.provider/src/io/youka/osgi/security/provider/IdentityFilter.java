@@ -1,4 +1,4 @@
-package io.youka.osgi.hello_jaxrs.provider.security;
+package io.youka.osgi.security.provider;
 
 import com.sun.security.auth.UserPrincipal;
 import lombok.Value;

@@ -1,0 +1,8 @@
+Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
+Bundle-Description: Security definitions for other modules.
+
+-buildpath: \
+    ${base-build}, \
+	org.osgi.service.jaxrs, \
+	org.apache.geronimo.specs:geronimo-jaxrs_2.1_spec, \
+	org.apache.geronimo.specs:geronimo-annotation_1.3_spec

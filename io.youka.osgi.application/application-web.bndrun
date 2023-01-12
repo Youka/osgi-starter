@@ -9,6 +9,7 @@ Bundle-Description: Run bundles to start a webserver with custom endpoints.
     osgi.identity;filter:='(osgi.identity=org.apache.aries.jax.rs.whiteboard)', \
     osgi.identity;filter:='(osgi.identity=com.sun.xml.bind.jaxb-osgi)', \
     osgi.identity;filter:='(osgi.identity=org.apache.aries.jax.rs.jackson)', \
+    osgi.identity;filter:='(osgi.identity=io.youka.osgi.security.provider)', \
     osgi.identity;filter:='(osgi.identity=io.youka.osgi.hello-jaxrs.provider)'
 
 -runbundles: \
@@ -51,4 +52,5 @@ Bundle-Description: Run bundles to start a webserver with custom endpoints.
 	com.fasterxml.jackson.jaxrs.jackson-jaxrs-base;version='[2.12.3,2.12.4)',\
 	com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider;version='[2.12.3,2.12.4)',\
 	com.fasterxml.jackson.module.jackson-module-jaxb-annotations;version='[2.12.3,2.12.4)',\
-	org.apache.aries.jax.rs.jackson;version='[2.0.1,2.0.2)'
+	org.apache.aries.jax.rs.jackson;version='[2.0.1,2.0.2)',\
+	io.youka.osgi.security.provider;version=snapshot
