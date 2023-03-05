@@ -1,3 +1,8 @@
+import aQute.bnd.exporter.executable.ExecutableJarExporter
+import aQute.bnd.gradle.Bndrun
+import aQute.bnd.gradle.Export
+import aQute.bnd.osgi.Constants
+
 // Project meta information
 group = "io.youka"
 version = "1.0.0-SNAPSHOT"
@@ -26,10 +31,32 @@ subprojects {
         compileOnly("org.mapstruct:mapstruct:${properties["mapstructVersion"]}")?.apply { annotationProcessor("$group:mapstruct-processor:$version") }
     }
 
-    // Enable JUnit5 testing
+    // Configure tasks
     tasks {
+        // Enable JUnit5 testing
         withType(Test::class.java) {
             useJUnitPlatform()
+        }
+
+        // Disable buggy run.* tasks
+        withType(Bndrun::class) {
+            // Not removable/replaceable because of existing references
+            enabled = false
+            group = "disabled"
+        }
+
+        // Create new run tasks (based on exported jar)
+        withType(Export::class) {
+            if (exporter.get() == ExecutableJarExporter.EXECUTABLE_JAR) {
+                doNotTrackState("Change detection on external bundles doesn't work!")
+                val applicationName = name.substringAfter('.')
+                create("exec.$applicationName", JavaExec::class) {
+                    description = "Execute OSGi application '$applicationName' (including export)."
+                    group = PublishingPlugin.PUBLISH_TASK_GROUP
+                    classpath = files("${destinationDirectory.get()}${File.separatorChar}$applicationName${Constants.DEFAULT_JAR_EXTENSION}")
+                    debug = System.getenv("exec.$applicationName.debug")?.isNotEmpty() ?: false
+                }.dependsOn(this)
+            }
         }
     }
 }

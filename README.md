@@ -16,7 +16,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
 * Defined application bundles (see `io.youka.osgi.application` bundle):
   * **application-service**:
     * Export: `./gradlew export.application-service`
-    * Run: `./gradlew run.application-service`
+    * Run: `./gradlew exec.application-service`
     * Interaction: _see console output (nothing more happens)_
   * **application-shell**:
     * Export: `./gradlew export.application-shell`
@@ -25,7 +25,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
     * Interaction: _the shell launches in console and shows options on input `help`_
   * **application-web**:
     * Export: `./gradlew export.application-web`
-    * Run: `./gradlew run.application-web`
+    * Run: `./gradlew exec.application-web`
     * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations (see `io.youka.osgi.hello-servlet.provider`)_
 * Run unit tests: `./gradlew test`
 * Advanced bundle resolution:
