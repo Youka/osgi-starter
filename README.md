@@ -4,45 +4,18 @@ Starter files for osgi based projects.
 ## Features
 * Multiple simple bundles
 * Lightweight workspace setup
-* Examples for shell commands, web endpoints, custom services and unit tests
-* Supports popular annotation processors
-* Build standalone applications
+* Examples for custom services
+* Build a standalone application
 
 ## Requirements
 Only [JDK 17+](https://adoptium.net/temurin/releases/) is required.  
 For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or [eclipse](https://www.eclipse.org/downloads/packages/)) should get installed.
 
 ## Usage
-* Defined application bundles (see `io.youka.osgi.application` bundle):
-  * **application-service**:
-    * Export: `./gradlew export.application-service`
-    * Run: `./gradlew run.application-service`
-    * Interaction: _see console output (nothing more happens)_
-  * **application-shell**:
-    * Export: `./gradlew export.application-shell`
-    * Run: `java -jar io.youka.osgi.application/build/distributions/executable/application-service.jar`  
-      _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
-    * Interaction: _the shell launches in console and shows options on input `help`_
-  * **application-web**:
-    * Export: `./gradlew export.application-web`
-    * Run: `./gradlew run.application-web`
-    * Interaction: _the jetty web server listens on http://localhost:8181 and provides routes by servlet implementations (see `io.youka.osgi.hello-servlet.provider`)_
-* Run unit tests: `./gradlew test`
-* Advanced bundle resolution:
-  * Add [-runrequires](https://bnd.bndtools.org/instructions/runrequires.html) to _*.bndrun_ files
-  * Call `./gradlew resolve`
-  * `-runbundles` gets updated by deep search of requirements
-
-## Next steps
-* Add logging (+ backend configuration)
-* Add webconsole (+ plugins)
-* Provide service configurations (+ configadmin)
-* Migrate servlet -> jax-rs (+ json serialization)
-* Enable security (framework, interfaces)
-* Add integration tests (OSGi tests which run bundles)
-* Automate releases (artifact upload, dockerfile, ci pipeline)
-* Improve quality assurance (linter, code coverage, monitoring)
-* ...
+* Run the _service_ application (stored in bundle `io.youka.osgi.application`):
+  * Export: `./gradlew export.application-service`
+  * Run: `./gradlew run.application-service`
+  * Interaction: _see console output (nothing more happens)_
 
 ## References
 * OSGi framework: [Apache Felix](https://felix.apache.org/documentation/downloads.html)

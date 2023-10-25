@@ -1,4 +1,4 @@
 Bundle-Version: 1.0.0.${tstamp}-SNAPSHOT
-Bundle-Description: Applications bundle with all run configurations.
+Bundle-Description: Applications bundle with run configurations.
 
 -dependson: *

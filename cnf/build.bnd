@@ -5,3 +5,23 @@
 # Basic bundles information
 Bundle-Vendor: Christoph 'Youka' Spanknebel
 Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+
+# Add dependencies repository (maven-central with managed index)
+-plugin.MavenCentral = aQute.bnd.repository.maven.provider.MavenBndRepository; \
+					            name="Maven Central"; \
+								releaseUrl="https://repo1.maven.org/maven2"; \
+								readOnly=true; \
+								index=${.}/maven_central.mvn
+
+# Base of bundles to build own bundles
+base-build: \
+	osgi.annotation, \
+	org.osgi.service.component.annotations, \
+	org.osgi.service.component
+
+# Base of bundles to start applications
+base-bundles: \
+	org.apache.felix.scr, \
+	org.osgi.service.component, \
+	org.osgi.util.function, \
+	org.osgi.util.promise

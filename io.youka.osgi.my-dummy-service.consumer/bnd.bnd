@@ -3,5 +3,5 @@ Bundle-Description: Consumer of dummy services with console output.
 
 -buildpath: \
     ${base-build}, \
-    io.youka.osgi.dummy-service.api, \
-    org.osgi.framework
+    org.osgi.framework, \
+    io.youka.osgi.dummy-service.api
