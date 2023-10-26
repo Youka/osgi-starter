@@ -20,7 +20,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) or 
     * Interaction: _see console output (nothing more happens)_
   * **application-shell**:
     * Export: `./gradlew export.application-shell`
-    * Run: `java -jar io.youka.osgi.application/build/distributions/executable/application-service.jar`  
+    * Run: `java -jar io.youka.osgi.application/generated/distributions/executable/application-service.jar`  
       _(gogo shell and gradle task are in conflict / cannot run simultaneously)_
     * Interaction: _the shell launches in console and shows options on input `help`_
   * **application-web**:
