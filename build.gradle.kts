@@ -1,8 +1,3 @@
-// Project meta information
-group = "io.youka"
-version = "1.0.0-SNAPSHOT"
-
-
 // Import api to create resources for subprojects
 plugins {
     java
