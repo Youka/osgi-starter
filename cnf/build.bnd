@@ -1,0 +1,19 @@
+# Runtime environment
+-runfw: org.apache.felix.framework
+-runee: JavaSE-17
+
+# Repositories
+-plugin.MavenCentral = aQute.bnd.repository.maven.provider.MavenBndRepository; \
+                        name="Maven Central"; \
+                        releaseUrl="https://repo1.maven.org/maven2"; \
+                        readOnly=true; \
+                        index=${.}/maven_central.mvn
+
+# Bundle description
+Bundle-Vendor: Christoph 'Youka' Spanknebel
+Bundle-License: https://opensource.org/license/mit
+
+# Macros
+build-osgi-base: \
+	osgi.annotation, \
+	org.osgi.service.component.annotations

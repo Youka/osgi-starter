@@ -1,6 +1,11 @@
 # Gradle
 .gradle/
 
+# OSGi
+cnf/cache/
+bin/
+generated/
+
 # IntelliJ
 .idea/
 
