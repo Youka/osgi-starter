@@ -1,0 +1,5 @@
+-runrequires: \
+    bnd.identity; id=dev.youka.my.application, \
+    bnd.identity; id=dev.youka.my.provider
+
+-resolve: cache
