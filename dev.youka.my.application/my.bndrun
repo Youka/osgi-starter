@@ -1,5 +1,6 @@
 -runrequires: \
     bnd.identity; id=dev.youka.my.application, \
-    bnd.identity; id=dev.youka.my.provider
+    bnd.identity; id=dev.youka.my.provider, \
+    bnd.identity; id=org.apache.felix.http.jetty
 
 -resolve: cache
