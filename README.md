@@ -17,6 +17,7 @@ For development an IDE ([intellij](https://www.jetbrains.com/idea/download/) rec
   * Output: _dev.youka.my.application/generated/distributions/executable/my.jar_
 * Run application: `./gradlew run.my`
   * Runs in terminal, stop by _CTRL + C_
+* Run tests: `./gradlew test`
 
 ## References
 * OSGi framework: [Apache Felix](https://felix.apache.org/documentation/downloads.html)
