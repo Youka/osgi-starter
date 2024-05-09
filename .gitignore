@@ -4,6 +4,7 @@
 # OSGi
 cnf/cache/
 bin/
+bin_test/
 generated/
 
 # IntelliJ
