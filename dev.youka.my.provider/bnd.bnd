@@ -4,4 +4,6 @@ Bundle-Version: 0.1.0.${tstamp}
 
 -buildpath: \
 	${build-osgi-base}, \
-	dev.youka.my.api
+	dev.youka.my.api, \
+	org.osgi.service.http.whiteboard, \
+	org.apache.felix.http.servlet-api
