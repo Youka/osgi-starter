@@ -1,0 +1,5 @@
+Bundle-Name: My api
+Bundle-Description: Main api bundle
+Bundle-Version: 0.1.0.${tstamp}
+
+Export-Package: dev.youka.my.api.*
