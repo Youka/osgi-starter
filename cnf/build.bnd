@@ -17,3 +17,10 @@ Bundle-License: https://opensource.org/license/mit
 build-osgi-base: \
 	osgi.annotation, \
 	org.osgi.service.component.annotations
+
+test-junit5: \
+    org.junit.jupiter:junit-jupiter-api, \
+    org.junit.jupiter:junit-jupiter-engine, \
+    org.junit.platform:junit-platform-commons, \
+    org.junit.platform:junit-platform-engine, \
+    org.opentest4j:opentest4j
