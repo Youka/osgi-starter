@@ -1,0 +1,7 @@
+Bundle-Name: My provider
+Bundle-Description: Main provider bundle
+Bundle-Version: 0.1.0.${tstamp}
+
+-buildpath: \
+	${build-osgi-base}, \
+	dev.youka.my.api
